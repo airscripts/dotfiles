@@ -1,0 +1,20 @@
+{
+	"editor.tabSize": 2,
+	"workbench.colorTheme": "GitHub Dark",
+	"workbench.colorCustomizations" : {
+	  "terminal.ansiYellow": "#C4A000",
+	  "terminal.ansiBlack": "#2E3436",
+	  "terminal.ansiBlue": "#4E9A06"
+	},
+	"terminal.integrated.fontSize": 15,
+	"terminal.integrated.fontFamily": "'Ubuntu Mono Derivative Powerline'",
+	"terminal.integrated.cursorStyle": "underline",
+	"terminal.integrated.cursorBlinking": true,
+	"editor.fontFamily": "'Ubuntu Mono', monospace",
+	"editor.minimap.enabled": false,
+	"editor.rulers": [
+	  80,
+	  120
+	],
+	"json.maxItemsComputed": 25000,
+}
