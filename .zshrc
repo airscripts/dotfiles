@@ -86,6 +86,17 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+if [[ -f ~/.zshrc_aliases ]]; then
+  source ~/.zshrc_aliases
+fi
+
+if [[ -f /usr/share/doc/fzf/examples/key-bindings.zsh ]]; then 
+  source /usr/share/doc/fzf/examples/key-bindings.zsh
+fi
+
+if [[ -f /usr/share/doc/fzf/examples/completion.zsh ]]; then
+  source /usr/share/doc/fzf/examples/completion.zsh
+fi
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
