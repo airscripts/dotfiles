@@ -1,22 +1,29 @@
 {
     "editor.tabSize": 2,
     "window.titleBarStyle": "custom",
-    "terminal.integrated.fontSize": 15,
-    "terminal.integrated.fontFamily": "'Ubuntu Mono Derivative Powerline'",
+    "json.maxItemsComputed": 25000,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.tabSize": 2,
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "all",
+    "editor.lineHeight": 22,
+    "editor.fontSize": 13,
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "'JetBrains Mono', 'Fira Code Retina', 'monospace'",
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "terminal.integrated.fontSize": 13,
+    "terminal.integrated.fontFamily": "'JetBrains Mono', 'Source Code Pro For Powerline', 'monospace'",
     "terminal.integrated.cursorStyle": "underline",
     "terminal.integrated.cursorBlinking": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.productIconTheme": "material-product-icons",
     "workbench.colorTheme": "GitHub Dark",
     "workbench.colorCustomizations" : {
         "terminal.ansiYellow": "#FCE94F",
         "terminal.ansiBlack": "#1F2428",
         "terminal.ansiBlue": "#70B8FB"
     },
-    "editor.minimap.enabled": false,
-    "json.maxItemsComputed": 25000,
-    "editor.fontFamily": "'Ubuntu Mono', monospace",
-    "editor.rulers": [
-        80,
-        120
-    ],
-    "diffEditor.ignoreTrimWhitespace": false,
 }
