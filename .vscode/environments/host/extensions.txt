@@ -1,3 +1,5 @@
 GitHub.github-vscode-theme
 ms-vscode-remote.remote-containers
 ms-vscode-remote.remote-ssh
+PKief.material-icon-theme
+PKief.material-product-icons
