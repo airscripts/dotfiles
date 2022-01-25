@@ -90,6 +90,10 @@ if [[ -f ~/.zshrc_aliases ]]; then
   source ~/.zshrc_aliases
 fi
 
+if [[ -f ~/.zprofile ]]; then
+  source ~/.zprofile
+fi
+
 if [[ -f /usr/share/doc/fzf/examples/key-bindings.zsh ]]; then 
   source /usr/share/doc/fzf/examples/key-bindings.zsh
 fi
