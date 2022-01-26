@@ -1,6 +1,12 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
+" Require packer.nvim plugins
+lua require('plugins')
+
+" Require packer.nvim plugins custom settings
+lua require('airscripts.telescope')
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
