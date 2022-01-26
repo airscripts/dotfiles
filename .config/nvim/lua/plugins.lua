@@ -8,4 +8,6 @@ return require('packer').startup(function()
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate'
   }
+
+  use "projekt0n/github-nvim-theme"
 end)
