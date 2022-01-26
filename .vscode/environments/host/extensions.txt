@@ -1,3 +1,4 @@
+asvetliakov.vscode-neovim
 GitHub.github-vscode-theme
 ms-vscode-remote.remote-containers
 ms-vscode-remote.remote-ssh
