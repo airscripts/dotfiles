@@ -8,6 +8,7 @@ lua require('plugins')
 lua require('airscripts.telescope')
 lua require('airscripts.treesitter')
 lua require('airscripts.github-nvim-theme')
+lua require('airscripts.lualine')
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
