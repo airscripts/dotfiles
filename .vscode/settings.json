@@ -1,5 +1,4 @@
 {
-    "editor.tabSize": 2,
     "window.titleBarStyle": "custom",
     "json.maxItemsComputed": 25000,
     "diffEditor.ignoreTrimWhitespace": false,
@@ -9,13 +8,13 @@
     "editor.lineHeight": 22,
     "editor.fontSize": 13,
     "editor.fontLigatures": true,
-    "editor.fontFamily": "'JetBrains Mono', 'Fira Code Retina', 'monospace'",
+    "editor.fontFamily": "'JetBrainsMono Nerd Font', 'monospace'",
     "editor.rulers": [
         80,
         120
     ],
     "terminal.integrated.fontSize": 13,
-    "terminal.integrated.fontFamily": "'JetBrains Mono', 'Source Code Pro For Powerline', 'monospace'",
+    "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font', 'monospace'",
     "terminal.integrated.cursorStyle": "underline",
     "terminal.integrated.cursorBlinking": true,
     "workbench.iconTheme": "material-icon-theme",
