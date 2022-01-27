@@ -6,4 +6,5 @@ telescope.setup {
       hidden = true
     }
   }
-}:
+}
+
