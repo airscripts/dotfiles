@@ -60,8 +60,8 @@ window:
   #
   # Values for `decorations` (macOS only):
   #     - transparent: Title bar, transparent background and title bar buttons
-  #     - buttonless: Title bar, transparent background and no title bar buttons
-  decorations: full
+  #     - buttonless: Title bar, transparent background and no title bar buttons  
+  decorations: full 
 
   # Background opacity
   #
@@ -117,32 +117,32 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: JetBrainsMono Nerd Font
+    family: FiraCode Nerd Font
 
     # The `style` can be specified to pick a specific face.
-    style: Regular
+    #style: Regular
 
   # Bold font face
-  bold:
+  #bold:
     # Font family
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: JetBrainsMono Nerd Font
+    #family: monospace
 
     # The `style` can be specified to pick a specific face.
-    style: Bold
+    #style: Bold
 
   # Italic font face
-  italic:
+  #italic:
     # Font family
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: JetBrainsMono Nerd Font
+    #family: monospace
 
     # The `style` can be specified to pick a specific face.
-    style: Italic
+    #style: Italic
 
   # Bold italic font face
   #bold_italic:
