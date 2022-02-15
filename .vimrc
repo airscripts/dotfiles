@@ -1,3 +1,4 @@
+set number
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -79,3 +80,4 @@ endif
 
 " Custom configs for plugins
 let NERDTreeShowHidden=1
+au VimEnter * NERDTree
