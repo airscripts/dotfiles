@@ -88,3 +88,4 @@ endif
 
 " Custom configs for plugins
 let NERDTreeShowHidden=1
+au VimEnter * NERDTree
