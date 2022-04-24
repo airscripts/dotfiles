@@ -9,12 +9,13 @@ return require('packer').startup(function()
     run = ':TSUpdate'
   }
 
-  use "projekt0n/github-nvim-theme"
-
   use {
     'nvim-lualine/lualine.nvim',
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
 
-  use "lukas-reineke/indent-blankline.nvim"
+  use({
+    "catppuccin/nvim",
+    as = "catppuccin"
+  })
 end)
