@@ -1,0 +1,66 @@
+order += "volume master"
+order += "wireless _first_"
+order += "disk /home"
+order += "disk /vm"
+order += "cpu_usage"
+order += "cpu_temperature 0"
+order += "memory"
+order += "battery 1"
+order += "tztime local"
+
+general {
+  output_format = "i3bar"
+  separator = "|"
+  colors = false
+  interval = 1 
+}
+
+volume master {
+  format = "  %volume "
+  format_muted = "  "
+  device = "pulse"
+}
+
+wireless _first_ {
+  format_up = " 直 %essid "
+  format_down = " 睊 "
+}
+
+disk "/home" {
+  format = "  %avail "
+  prefix_type = decimal
+}
+
+disk "/vm" {
+  format = "  %avail "
+  prefix_type = decimal
+}
+
+cpu_usage {
+  format =  "  %usage "
+}
+
+cpu_temperature 0 {
+  format = "  %degrees°C "
+}
+
+memory {
+  format = "  %used "
+  threshold_degraded = "1G"
+  format_degraded = "MEMORY < %available"
+}
+
+battery 1 {
+  format = "‎ %status %percentage ‎"
+  status_bat = ""
+  status_chr = ""
+  status_full = ""
+  format_down = " No Battery "
+  last_full_capacity = true
+  path = /sys/class/power_supply/BAT0/uevent
+  integer_battery_capacity = true
+}
+
+tztime local {
+  format = "  %d/%m/%Y @ %H:%M:%S "
+}
