@@ -1,0 +1,21 @@
+configuration {
+	modi: "window,run,drun,ssh";
+	font: "FiraCode Nerd Font 12";
+	terminal: "alacritty";
+	disable-history: false;
+	sidebar-mode: false;
+	max-history-size: 50;
+	display-drun: "Applications";
+
+  timeout {
+      action: "kb-cancel";
+      delay: 0;
+  }
+
+  filebrowser {
+      directories-first: true;
+      sorting-method: "name";
+  }
+}
+
+@import "~/.config/rofi/themes/catppuccin.rasi"
