@@ -4,7 +4,7 @@
   font: "FiraCode Nerd Font 12";
   bg: #1E1D2F;
   fg: #D9E0EE;
-  ac: #B5E8E0;
+  ac: #96CDFB;
   background-color: @bg;
   border: 0;
   margin: 0;
