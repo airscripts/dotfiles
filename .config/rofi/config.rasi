@@ -1,20 +1,23 @@
 configuration {
-	modi: "window,run,drun,ssh";
-	font: "FiraCode Nerd Font 12";
-	terminal: "alacritty";
-	disable-history: false;
-	sidebar-mode: false;
-	max-history-size: 50;
-	display-drun: "Applications";
+  modi: "window,run,drun,ssh";
+  font: "FiraCode Nerd Font 12";
+  terminal: "alacritty";
+  disable-history: false;
+  sidebar-mode: false;
+  max-history-size: 50;
+  display-drun: "Applications";
+  display-run: "Run";
+  display-window: "Window";
+  display-ssh: "SSH";
 
   timeout {
-      action: "kb-cancel";
-      delay: 0;
+    action: "kb-cancel";
+    delay: 0;
   }
 
   filebrowser {
-      directories-first: true;
-      sorting-method: "name";
+    directories-first: true;
+    sorting-method: "name";
   }
 }
 
