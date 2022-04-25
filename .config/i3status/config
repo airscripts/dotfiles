@@ -27,12 +27,12 @@ wireless _first_ {
 }
 
 disk "/home" {
-  format = "  %avail "
+  format = "  /home %avail "
   prefix_type = decimal
 }
 
 disk "/vm" {
-  format = "  %avail "
+  format = "  /vm %avail "
   prefix_type = decimal
 }
 
