@@ -9,10 +9,11 @@ configuration {
   display-run: "Run";
   display-window: "Window";
   display-ssh: "SSH";
+  matching: "fuzzy";
 
   timeout {
     action: "kb-cancel";
-    delay: 0;
+    delay: 5;
   }
 
   filebrowser {
