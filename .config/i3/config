@@ -1,5 +1,5 @@
 set $mod Mod4
-set $teal #b5e8e0
+set $blue #96CDFB
 set $peach #F8BD96
 set $red #F28FAD
 set $black #1E1E2E
@@ -20,8 +20,8 @@ floating_modifier $mod
 
 font pango:FiraCode Nerd Font weight=450
  
-client.focused $teal $teal $black $red $teal
-client.focused_inactive $teal $black $teal $red $teal
+client.focused $blue $blue $black $red $blue
+client.focused_inactive $blue $black $blue $red $blue
 client.unfocused $peach $peach $black $red $peach
 client.urgent $red $red $black $red $red
 
@@ -113,7 +113,7 @@ bar {
     separator #444444
     background #222222
     statusline #B1B1B1
-    focused_workspace #b5e8e0 #b5e8e0 #000000
+    focused_workspace #96CDFB #96CDFB #000000
     active_workspace #333333 #333333 #888888
     inactive_workspace #CECECE #333333 #f1f1f1
     urgent_workspace #F28FAD #F28FAD #ffffff
