@@ -25,10 +25,8 @@ if has("syntax")
 endif
 
 colorscheme catppuccin
+
 set background=dark
-
-filetype plugin indent on
-
 set showcmd
 set showmatch
 set ignorecase
