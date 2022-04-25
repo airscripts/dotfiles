@@ -1,5 +1,5 @@
 configuration {
-  modi: "window,run,drun,ssh";
+  modi: "window,run,drun,ssh,emoji";
   font: "FiraCode Nerd Font 12";
   terminal: "alacritty";
   disable-history: false;
