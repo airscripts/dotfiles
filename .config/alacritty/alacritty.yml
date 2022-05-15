@@ -1,17 +1,17 @@
 window:
   dimensions:
-    columns: 100
-    lines: 75
+    columns: 132
+    lines: 48
 
   padding:
     x: 26
     y: 26
 
   dynamic_padding: false
-  startup_mode: Windowed
+  startup_mode: Maximized
 
 scrolling:
-  history: 500
+  history: 1000
   multiplier: 3
 
 font:
@@ -25,7 +25,7 @@ font:
   italic:
     family: "Fira Code Nerd Font"
 
-  size: 10.0
+  size: 11.0
 
   offset:
     x: 0
@@ -166,3 +166,6 @@ debug:
   log_level: OFF
   print_events: false
   ref_test: false
+
+env: 
+  WINIT_X11_SCALE_FACTOR: "1"
