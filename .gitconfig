@@ -1,0 +1,5 @@
+[user]
+	email = dev.airscript@gmail.com
+	name = Airscript
+[core]
+	editor = nvim
