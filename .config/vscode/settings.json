@@ -21,4 +21,5 @@
     "workbench.productIconTheme": "material-product-icons",
     "workbench.colorTheme": "GitHub Dark",
     "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim"
+    "git.mergeEditor": true
 }
