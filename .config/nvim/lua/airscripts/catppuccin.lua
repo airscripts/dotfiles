@@ -5,30 +5,31 @@ catppuccin.setup({
   term_colors = false,
   
   styles = {
-    comments = "italic",
-    functions = "italic",
-    keywords = "italic",
-    strings = "NONE",
-    variables = "italic",
+    comments = { "italic" },
+    functions = { "italic" },
+    keywords = { "italic" },
+    strings = {},
+    variables = { "italic" },
   },
 
   integrations = {
     treesitter = true,
+
     native_lsp = {
       enabled = true,
       
       virtual_text = {
-        errors = "italic",
-	      hints = "italic",
-	      warnings = "italic",
-	      information = "italic",
+        errors = { "italic" },
+	hints = { "italic" },
+	warnings = { "italic" },
+	information = { "italic" },
       },
 
       underlines = {
-        errors = "underline",
-        hints = "underline",
-        warnings = "underline",
-        information = "underline", 
+        errors = { "underline" },
+        hints = { "underline" },
+        warnings = { "underline" },
+        information = { "underline" }, 
       },
   },
 
