@@ -14,6 +14,12 @@ return require('packer').startup(function()
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
 
+  use {
+    'akinsho/bufferline.nvim', 
+    tag = "v2.8.1", 
+    requires = 'kyazdani42/nvim-web-devicons'
+  }
+
   use({
     "catppuccin/nvim",
     as = "catppuccin"
