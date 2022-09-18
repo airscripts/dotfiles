@@ -1,8 +1,10 @@
 return require('packer').startup(function() 
+  use 'wbthomason/packer.nvim'
+
   use {
-    'williamboman/mason.nvim',
-    'williamboman/mason-lspconfig.nvim',
-    'neovim/nvim-lspconfig',
+    "williamboman/mason.nvim",
+    "williamboman/mason-lspconfig.nvim",
+    "neovim/nvim-lspconfig",
   }
 
   use 'mfussenegger/nvim-dap'
@@ -25,11 +27,11 @@ return require('packer').startup(function()
   }
 
   use({
-    'jose-elias-alvarez/null-ls.nvim',
+    "jose-elias-alvarez/null-ls.nvim",
     config = function()
-        require('null-ls').setup()
+        require("null-ls").setup()
     end,
-    requires = { 'nvim-lua/plenary.nvim' },
+    requires = { "nvim-lua/plenary.nvim" },
   })
 
   use {
@@ -39,7 +41,7 @@ return require('packer').startup(function()
 
   use {
     'akinsho/bufferline.nvim', 
-    tag = 'v2.8.1', 
+    tag = "v2.8.1", 
     requires = 'kyazdani42/nvim-web-devicons'
   }
 
