@@ -65,6 +65,8 @@ require("airscripts.telescope")
 require("airscripts.treesitter")
 require("airscripts.lualine")
 require("airscripts.catppuccin")
+require("airscripts.dap")
+require("airscripts.dap-ui")
 require("bufferline").setup{}
 require("mason").setup()
 require("mason-lspconfig").setup()
@@ -128,4 +130,6 @@ local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protoco
 require'lspconfig'.dockerls.setup {
   capabilities = capabilities
 }
+
+require'lspconfig'.yamlls.setup{}
 
