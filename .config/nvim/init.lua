@@ -17,11 +17,9 @@ set nocompatible
 vim.cmd([[
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
-
 call vundle#end()         
 ]])
 
@@ -33,11 +31,6 @@ vim.cmd([[
 if has("syntax")
   syntax on
 endif
-]])
-
-vim.cmd([[
-colorscheme catppuccin
-hi Normal guibg=NONE ctermbg=NONE
 ]])
 
 vim.cmd([[
@@ -60,6 +53,8 @@ if filereadable("/etc/vim/vimrc.local")
 endif
 ]])
 
+vim.g.catppuccin_flavour = "frappe"
+
 require("plugins")
 require("airscripts.telescope")
 require("airscripts.treesitter")
@@ -70,6 +65,11 @@ require("airscripts.dap-ui")
 require("bufferline").setup{}
 require("mason").setup()
 require("mason-lspconfig").setup()
+
+vim.cmd([[
+colorscheme catppuccin
+hi Normal guibg=NONE ctermbg=NONE
+]])
 
 local cmp = require'cmp'
 
