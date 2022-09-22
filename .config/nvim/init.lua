@@ -35,6 +35,7 @@ endif
 ]])
 
 vim.cmd([[
+map <silent> <C-f> :Telescope<CR>
 map <silent> <C-n> :NERDTreeFocus<CR>
 nnoremap <silent>[b :BufferLineCycleNext<CR>
 nnoremap <silent>]b :BufferLineCyclePrev<CR>
@@ -133,4 +134,5 @@ require'lspconfig'.dockerls.setup {
 }
 
 require'lspconfig'.yamlls.setup{}
+require'lspconfig'.pylsp.setup{}
 
