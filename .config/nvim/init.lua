@@ -26,6 +26,7 @@ call vundle#end()
 vim.cmd("filetype on")               
 vim.cmd("filetype plugin indent on")
 vim.cmd("runtime! debian.vim")
+vim.cmd("let NERDTreeShowHidden=1")
 
 vim.cmd([[
 if has("syntax")
