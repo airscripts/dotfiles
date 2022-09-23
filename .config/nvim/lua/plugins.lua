@@ -1,5 +1,8 @@
-return require('packer').startup(function() 
-  use 'wbthomason/packer.nvim'
+return require('packer').startup(function()
+  use {
+    "wbthomason/packer.nvim",
+    "ojroques/vim-oscyank"
+  }
 
   use {
     "williamboman/mason.nvim",
@@ -7,31 +10,34 @@ return require('packer').startup(function()
     "neovim/nvim-lspconfig",
   }
 
-  use 'mfussenegger/nvim-dap'
-  use 'hrsh7th/cmp-nvim-lsp'
-  use 'hrsh7th/cmp-buffer'
-  use 'hrsh7th/cmp-path'
-  use 'hrsh7th/cmp-cmdline'
-  use 'hrsh7th/nvim-cmp'
-  use 'hrsh7th/cmp-vsnip'
-  use 'hrsh7th/vim-vsnip'
-
-  use { 
-    "rcarriga/nvim-dap-ui", 
-    requires = {"mfussenegger/nvim-dap"} 
+  use {
+    "hrsh7th/cmp-nvim-lsp",
+    "hrsh7th/cmp-buffer",
+    "hrsh7th/cmp-path",
+    "hrsh7th/cmp-cmdline",
+    "hrsh7th/nvim-cmp",
+    "hrsh7th/cmp-vsnip",
+    "hrsh7th/vim-vsnip"
   }
 
   use {
-    'nvim-telescope/telescope.nvim',
-    requires = { {'nvim-lua/plenary.nvim'} }
+    "mfussenegger/nvim-dap"
   }
 
   use {
-    'nvim-treesitter/nvim-treesitter',
+    "rcarriga/nvim-dap-ui",
+    requires = {"mfussenegger/nvim-dap"}
+  }
+
+  use {
+    "nvim-telescope/telescope.nvim",
+    requires = { {"nvim-lua/plenary.nvim"} }
+  }
+
+  use {
+    "nvim-treesitter/nvim-treesitter",
     run = ':TSUpdate'
   }
-  
-  use { 'ojroques/vim-oscyank' }
 
   use({
     "jose-elias-alvarez/null-ls.nvim",
@@ -47,8 +53,8 @@ return require('packer').startup(function()
   }
 
   use {
-    'akinsho/bufferline.nvim', 
-    tag = "v2.8.1", 
+    'akinsho/bufferline.nvim',
+    tag = "v2.8.1",
     requires = 'kyazdani42/nvim-web-devicons'
   }
 
