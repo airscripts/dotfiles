@@ -136,3 +136,6 @@ require'lspconfig'.dockerls.setup {
 require'lspconfig'.yamlls.setup{}
 require'lspconfig'.pylsp.setup{}
 
+vim.cmd([[
+let g:oscyank_term = 'default'
+]])

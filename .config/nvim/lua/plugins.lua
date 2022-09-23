@@ -30,6 +30,8 @@ return require('packer').startup(function()
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate'
   }
+  
+  use { 'ojroques/vim-oscyank' }
 
   use({
     "jose-elias-alvarez/null-ls.nvim",
