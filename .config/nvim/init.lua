@@ -25,9 +25,13 @@ if has("syntax")
   syntax on
 endif
 
-map <silent> <C-c> :OSCYank
-map <silent> <C-f> :Telescope<CR>
+map <silent> <C-s> :w<CR>
+map <silent> <C-c> :OSCYank<CR>
+map <silent> <C-t> :Telescope<CR>
 map <silent> <C-n> :NERDTreeFocus<CR>
+map <silent> <C-g> :Telescope live_grep<CR>
+map <silent> <C-f> :Telescope find_files<CR>
+map <silent> <C-p> :Telescope current_buffer_fuzzy_find<CR> 
 
 nnoremap <silent>[n :bn<CR>
 nnoremap <silent>]n :bp<CR>
