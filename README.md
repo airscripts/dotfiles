@@ -8,7 +8,7 @@ Just clone this repository.
 Just add or replace existing related dotfiles in order to load them up.  
 
 ## 🤝 Contributing  
-Contributions and suggestions about how to improve them is welcome!  
+Contributions and suggestions about how to improve them are welcome!  
 
 ## 💚 Support  
 If you want to support my work you can do it with the links below.  
