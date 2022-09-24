@@ -1,7 +1,7 @@
 window:
   dimensions:
-    columns: 132
     lines: 48
+    columns: 132
 
   padding:
     x: 26
@@ -16,8 +16,8 @@ scrolling:
 
 font:
   normal:
-    family: "Fira Code Nerd Font"
     style: Retina
+    family: "Fira Code Nerd Font"
 
   bold:
     family: "Fira Code Nerd Font"
@@ -37,8 +37,8 @@ font:
 
   use_thin_strokes: true
 
-draw_bold_text_with_bright_colors: false
 custom_cursor_colors: true
+draw_bold_text_with_bright_colors: false
 
 colors:
   primary:
@@ -50,74 +50,36 @@ colors:
     cursor: "0xF5E0DC"
 
   normal:
-    black: "0x6E6C7E"
     red: "0xF28FAD"
+    cyan: "0x89DCEB"
+    blue: "0x96CDFB"
+    white: "0xD9E0EE"
+    black: "0x6E6C7E"
     green: "0xABE9B3"
     yellow: "0xFAE3B0"
-    blue: "0x96CDFB"
     magenta: "0xF5C2E7"
-    cyan: "0x89DCEB"
-    white: "0xD9E0EE"
 
   bright:
-    black: "0x988BA2"
     red: "0xF28FAD"
+    cyan: "0x89DCEB"
+    blue: "0x96CDFB"
+    white: "0xD9E0EE"
+    black: "0x988BA2"
     green: "0xABE9B3"
     yellow: "0xFAE3B0"
-    blue: "0x96CDFB"
     magenta: "0xF5C2E7"
-    cyan: "0x89DCEB"
-    white: "0xD9E0EE"
 
   indexed_colors:
     - { index: 16, color: "0xF8BD96" }
     - { index: 17, color: "0xF5E0DC" }
 
 bell:
-  animation: EaseOutExpo
-  color: "0xffffff"
   duration: 0
+  color: "0xffffff"
+  animation: EaseOutExpo
 
 key_bindings:
-  - { key: V, mods: Command, action: Paste }
-  - { key: C, mods: Command, action: Copy }
-  - { key: Q, mods: Command, action: Quit }
-  - { key: N, mods: Command, action: SpawnNewInstance }
-  - { key: Return, mods: Command, action: ToggleFullscreen }
-  - { key: Home, chars: "\x1bOH", mode: AppCursor }
-  - { key: Home, chars: "\x1b[H", mode: ~AppCursor }
-  - { key: End, chars: "\x1bOF", mode: AppCursor }
-  - { key: End, chars: "\x1b[F", mode: ~AppCursor }
-  - { key: Equals, mods: Command, action: IncreaseFontSize }
-  - { key: Minus, mods: Command, action: DecreaseFontSize }
-  - { key: Minus, mods: Command|Shift, action: ResetFontSize }
-  - { key: PageUp, mods: Shift, chars: "\x1b[5;2~" }
-  - { key: PageUp, mods: Control, chars: "\x1b[5;5~" }
-  - { key: PageUp, chars: "\x1b[5~" }
-  - { key: PageDown, mods: Shift, chars: "\x1b[6;2~" }
-  - { key: PageDown, mods: Control, chars: "\x1b[6;5~" }
-  - { key: PageDown, chars: "\x1b[6~" }
-  - { key: Left, mods: Shift, chars: "\x1b[1;2D" }
-  - { key: Left, mods: Control, chars: "\x1b[1;5D" }
-  - { key: Left, mods: Alt, chars: "\x1b[1;3D" }
-  - { key: Left, chars: "\x1b[D", mode: ~AppCursor }
-  - { key: Left, chars: "\x1bOD", mode: AppCursor }
-  - { key: Right, mods: Shift, chars: "\x1b[1;2C" }
-  - { key: Right, mods: Control, chars: "\x1b[1;5C" }
-  - { key: Right, mods: Alt, chars: "\x1b[1;3C" }
-  - { key: Right, chars: "\x1b[C", mode: ~AppCursor }
-  - { key: Right, chars: "\x1bOC", mode: AppCursor }
-  - { key: Up, mods: Shift, chars: "\x1b[1;2A" }
-  - { key: Up, mods: Control, chars: "\x1b[1;5A" }
-  - { key: Up, mods: Alt, chars: "\x1b[1;3A" }
-  - { key: Up, chars: "\x1b[A", mode: ~AppCursor }
-  - { key: Up, chars: "\x1bOA", mode: AppCursor }
-  - { key: Down, mods: Shift, chars: "\x1b[1;2B" }
-  - { key: Down, mods: Control, chars: "\x1b[1;5B" }
-  - { key: Down, mods: Alt, chars: "\x1b[1;3B" }
-  - { key: Down, chars: "\x1b[B", mode: ~AppCursor }
-  - { key: Down, chars: "\x1bOB", mode: AppCursor }
-  - { key: Tab, mods: Shift, chars: "\x1b[Z" }
+  - { key: Back, chars: "\x7f" }
   - { key: F1, chars: "\x1bOP" }
   - { key: F2, chars: "\x1bOQ" }
   - { key: F3, chars: "\x1bOR" }
@@ -130,26 +92,64 @@ key_bindings:
   - { key: F10, chars: "\x1b[21~" }
   - { key: F11, chars: "\x1b[23~" }
   - { key: F12, chars: "\x1b[24~" }
-  - { key: Back, chars: "\x7f" }
-  - { key: Back, mods: Alt, chars: "\x1b\x7f" }
   - { key: Insert, chars: "\x1b[2~" }
   - { key: Delete, chars: "\x1b[3~" }
+  - { key: PageUp, chars: "\x1b[5~" }
+  - { key: PageDown, chars: "\x1b[6~" }
+  - { key: C, mods: Command, action: Copy }
+  - { key: Q, mods: Command, action: Quit }
+  - { key: V, mods: Command, action: Paste }
   - { key: W, mods: Command, chars: "\x02&" }
   - { key: T, mods: Command, chars: "\x02c" }
-  - { key: RBracket, mods: Command|Shift, chars: "\x02n" }
-  - { key: LBracket, mods: Command|Shift, chars: "\x02p" }
+  - { key: F, mods: Command, chars: "\x02/" }
+  - { key: Up, mods: Alt, chars: "\x1b[1;3A" }
+  - { key: Tab, mods: Shift, chars: "\x1b[Z" }
+  - { key: Back, mods: Alt, chars: "\x1b\x7f" }
+  - { key: Up, mods: Shift, chars: "\x1b[1;2A" }
+  - { key: Down, mods: Alt, chars: "\x1b[1;3B" }
+  - { key: Left, mods: Alt, chars: "\x1b[1;3D" }
+  - { key: Up, chars: "\x1bOA", mode: AppCursor }
+  - { key: Right, mods: Alt, chars: "\x1b[1;3C" }
+  - { key: Up, mods: Control, chars: "\x1b[1;5A" }
+  - { key: Up, chars: "\x1b[A", mode: ~AppCursor }
+  - { key: End, chars: "\x1bOF", mode: AppCursor }
+  - { key: Down, mods: Shift, chars: "\x1b[1;2B" }
+  - { key: Left, mods: Shift, chars: "\x1b[1;2D" }
+  - { key: Left, chars: "\x1bOD", mode: AppCursor }
+  - { key: Right, mods: Shift, chars: "\x1b[1;2C" }
+  - { key: Home, chars: "\x1bOH", mode: AppCursor }
+  - { key: End, chars: "\x1b[F", mode: ~AppCursor }
+  - { key: Down, chars: "\x1bOB", mode: AppCursor }
+  - { key: Left, mods: Control, chars: "\x1b[1;5D" }
+  - { key: Left, chars: "\x1b[D", mode: ~AppCursor }
+  - { key: Right, chars: "\x1bOC", mode: AppCursor }
+  - { key: Down, chars: "\x1b[B", mode: ~AppCursor }
+  - { key: Down, mods: Control, chars: "\x1b[1;5B" }
   - { key: RBracket, mods: Command, chars: "\x02o" }
   - { key: LBracket, mods: Command, chars: "\x02;" }
-  - { key: F, mods: Command, chars: "\x02/" }
+  - { key: Home, chars: "\x1b[H", mode: ~AppCursor }
+  - { key: PageUp, mods: Shift, chars: "\x1b[5;2~" }
+  - { key: Right, mods: Control, chars: "\x1b[1;5C" }
+  - { key: Right, chars: "\x1b[C", mode: ~AppCursor }
+  - { key: PageUp, mods: Control, chars: "\x1b[5;5~" }
+  - { key: PageDown, mods: Shift, chars: "\x1b[6;2~" }
+  - { key: N, mods: Command, action: SpawnNewInstance }
+  - { key: PageDown, mods: Control, chars: "\x1b[6;5~" }
+  - { key: RBracket, mods: Command|Shift, chars: "\x02n" }
+  - { key: LBracket, mods: Command|Shift, chars: "\x02p" }
+  - { key: Minus, mods: Command, action: DecreaseFontSize }
+  - { key: Equals, mods: Command, action: IncreaseFontSize }
+  - { key: Return, mods: Command, action: ToggleFullscreen }
+  - { key: Minus, mods: Command|Shift, action: ResetFontSize }
 
 mouse:
+  hide_when_typing: true
   double_click: { threshold: 300 }
   triple_click: { threshold: 300 }
-  hide_when_typing: true
 
 selection:
-  semantic_escape_chars: ',│`|:"'' ()[]{}<>'
   save_to_clipboard: false
+  semantic_escape_chars: ',│`|:"'' ()[]{}<>'
 
 mouse_bindings:
   - { mouse: Middle, action: PasteSelection }
@@ -161,11 +161,11 @@ cursor:
 live_config_reload: true
 
 debug:
-  render_timer: false
-  persistent_logging: false
   log_level: OFF
-  print_events: false
   ref_test: false
+  render_timer: false
+  print_events: false
+  persistent_logging: false
 
 env: 
   WINIT_X11_SCALE_FACTOR: "1"
