@@ -16,9 +16,11 @@ set $ws8 "7"
 set $ws9 "8"
 set $ws10 "9"
 
-default_border pixel 1
 floating_modifier $mod
+
+default_border pixel 1
 default_floating_border pixel 1
+for_window [class="^.*"] border pixel 1
 
 title_align center
 font pango:Cantarell 10
