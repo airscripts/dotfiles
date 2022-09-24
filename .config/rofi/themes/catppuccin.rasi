@@ -1,15 +1,15 @@
 @theme "/dev/null"
 
 * {
-  font: "FiraCode Nerd Font 12";
-  bg: #1E1D2F;
-  fg: #D9E0EE;
-  ac: #8CAAEE;
-  background-color: @bg;
   border: 0;
   margin: 0;
   padding: 0;
   spacing: 0;
+  bg: #1E1D2F;
+  fg: #D9E0EE;
+  ac: #8CAAEE;
+  background-color: @bg;
+  font: "FiraCode Nerd Font 12";
 }
 
 window {
@@ -26,9 +26,9 @@ element selected {
 }
 
 element-text {
-  background-color: inherit;
   text-color: inherit;
   vertical-align: 0.5;
+  background-color: inherit;
 }
 
 element-icon {
@@ -37,9 +37,9 @@ element-icon {
 }
 
 entry {
-  background-color: @ac;
   padding: 12;
   text-color: @bg;
+  background-color: @ac;
 }
 
 inputbar {
@@ -47,10 +47,10 @@ inputbar {
 }
 
 listview {
+  lines: 8;
+  columns: 1;
   padding: 8 12;
   background-color: @bg;
-  columns: 1;
-  lines: 8;
 }
 
 mainbox {
@@ -58,10 +58,10 @@ mainbox {
 }
 
 prompt {
-  background-color: @ac;
   enabled: true;
-  padding: 12 0 0 12;
   text-color: @bg;
+  padding: 12 0 0 12;
+  background-color: @ac;
 }
 
 /* vim: ft=sass
