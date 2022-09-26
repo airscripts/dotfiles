@@ -28,9 +28,10 @@ endif
 map <silent> <C-s> :w<CR>
 map <silent> <C-c> :OSCYank<CR>
 map <silent> <C-t> :Telescope<CR>
-map <silent> <C-n> :NERDTreeFocus<CR>
+map <silent> <C-r> :NERDTreeFind<CR>
 map <silent> <C-g> :Telescope live_grep<CR>
 map <silent> <C-f> :Telescope find_files<CR>
+map <silent> <C-n> :NERDTreeMirror<CR>:NERDTreeToggle<CR>
 map <silent> <C-p> :Telescope current_buffer_fuzzy_find<CR> 
 
 nnoremap <silent>[bn :bn<CR>
@@ -46,7 +47,10 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
-call vundle#end()         
+call vundle#end()
+
+let NERDTreeShowHidden=1
+autocmd BufWinEnter * if getcmdwintype() == '' | silent NERDTreeMirror | endif
 ]])
 
 require("plugins")
