@@ -33,15 +33,10 @@ map <silent> <C-g> :Telescope live_grep<CR>
 map <silent> <C-f> :Telescope find_files<CR>
 map <silent> <C-p> :Telescope current_buffer_fuzzy_find<CR> 
 
-nnoremap <silent>[n :bn<CR>
-nnoremap <silent>]n :bp<CR>
-nnoremap <silent>]d :bd<CR>
-nnoremap <silent>[d :tabnew<CR>
-nnoremap <silent>]c :BufferLinePick<CR>
-nnoremap <silent>[b :BufferLineCycleNext<CR>
-nnoremap <silent>]b :BufferLineCyclePrev<CR>
-nnoremap <silent>[c :BufferLinePickClose<CR>
-nnoremap <silent>[p :BufferLineTogglePin<CR>
+nnoremap <silent>[bn :bn<CR>
+nnoremap <silent>[bp :bp<CR>
+nnoremap <silent>[bd :bd<CR>
+nnoremap <silent>[nb :tabnew<CR>
 
 if filereadable("/etc/vim/vimrc.local")
   source /etc/vim/vimrc.local
