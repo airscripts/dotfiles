@@ -31,8 +31,15 @@ map <silent> <C-t> :Telescope<CR>
 map <silent> <C-r> :NERDTreeFind<CR>
 map <silent> <C-g> :Telescope live_grep<CR>
 map <silent> <C-f> :Telescope find_files<CR>
-map <silent> <C-n> :NERDTreeMirror<CR>:NERDTreeToggle<CR>
 map <silent> <C-p> :Telescope current_buffer_fuzzy_find<CR> 
+map <silent> <C-n> :NERDTreeMirror<CR>:NERDTreeToggle<CR><C-w>w
+
+inoremap <S-Tab> <C-d>
+
+vnoremap <Tab> >>
+vnoremap <S-Tab> <<
+
+tnoremap <esc> <C-\><C-N>
 
 nnoremap <silent>[bn :bn<CR>
 nnoremap <silent>[bp :bp<CR>
