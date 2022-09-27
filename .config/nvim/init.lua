@@ -32,6 +32,8 @@ map <silent> <C-f> :Telescope find_files<CR>
 map <silent> <C-t> :NvimTreeToggle<CR><C-w>w
 
 inoremap <S-Tab> <C-d>
+inoremap <silent><C-j> <Esc><Cmd>exe v:count1 . "ToggleTerm"<CR>
+inoremap <silent>f<C-j> :ToggleTerm direction=float<CR>
 
 vnoremap <Tab> >>
 vnoremap <S-Tab> <<
@@ -42,6 +44,8 @@ nnoremap <silent>[bn :bn<CR>
 nnoremap <silent>[bp :bp<CR>
 nnoremap <silent>[nb :tabnew<CR>
 nnoremap <silent>[bd :bd<CR>:bp<CR>
+nnoremap <silent><C-j> <Cmd>exe v:count1 . "ToggleTerm"<CR>
+nnoremap <silent>f<C-j> :ToggleTerm direction=float<CR>
 
 if filereadable("/etc/vim/vimrc.local")
   source /etc/vim/vimrc.local
@@ -67,4 +71,5 @@ require("core.lualine")
 require("core.telescope")
 require("core.nvim-tree")
 require("core.treesitter")
+require("core.toggleterm")
 require("core.catppuccin")

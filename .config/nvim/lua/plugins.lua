@@ -36,12 +36,17 @@ return require('packer').startup(function()
 
   use {
     "nvim-treesitter/nvim-treesitter",
-    run = ':TSUpdate'
+    run = ":TSUpdate"
   }
 
   use {
     "kyazdani42/nvim-tree.lua",
     requires = {"kyazdani42/nvim-web-devicons"},
+  }
+
+  use {
+    "akinsho/toggleterm.nvim",
+    tag = "*"
   }
 
   use({
@@ -64,7 +69,7 @@ return require('packer').startup(function()
   }
 
   use({
-    'catppuccin/nvim',
-    as = 'catppuccin'
+    "catppuccin/nvim",
+    as = "catppuccin"
   })
 end)
