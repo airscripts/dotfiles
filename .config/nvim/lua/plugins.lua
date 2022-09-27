@@ -40,6 +40,10 @@ return require('packer').startup(function()
   }
 
   use {
+    "goolord/alpha-nvim",
+  }
+
+  use {
     "kyazdani42/nvim-tree.lua",
     requires = {"kyazdani42/nvim-web-devicons"},
   }
@@ -72,4 +76,8 @@ return require('packer').startup(function()
     "catppuccin/nvim",
     as = "catppuccin"
   })
+
+	use {
+  	"folke/which-key.nvim",
+	}
 end)
