@@ -40,7 +40,7 @@ tnoremap <esc> <C-\><C-N>
 
 nnoremap <silent>[bn :bn<CR>
 nnoremap <silent>[bp :bp<CR>
-nnoremap <silent>[bd :bd<CR>
+nnoremap <silent>[bd :bd<CR>[bp
 nnoremap <silent>[nb :tabnew<CR>
 
 if filereadable("/etc/vim/vimrc.local")
@@ -57,10 +57,10 @@ require("plugins")
 
 require("core.mason")
 require("core.mason-lspconfig")
-require("bufferline")
+require("core.bufferline")
 
 require("core.cmp")
-require("core.lsp")
+require("core.lspconfig")
 require("core.dap")
 require("core.dap-ui")
 require("core.lualine")
