@@ -39,6 +39,11 @@ return require('packer').startup(function()
     run = ':TSUpdate'
   }
 
+  use {
+    "kyazdani42/nvim-tree.lua",
+    requires = {"kyazdani42/nvim-web-devicons"},
+  }
+
   use({
     "jose-elias-alvarez/null-ls.nvim",
     config = function()

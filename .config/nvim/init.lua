@@ -27,12 +27,9 @@ endif
 
 map <silent> <C-s> :w<CR>
 map <silent> <C-c> :OSCYank<CR>
-map <silent> <C-t> :Telescope<CR>
-map <silent> <C-r> :NERDTreeFind<CR>
-map <silent> <C-g> :Telescope live_grep<CR>
+map <silent> <C-p> :Telescope<CR>
 map <silent> <C-f> :Telescope find_files<CR>
-map <silent> <C-p> :Telescope current_buffer_fuzzy_find<CR> 
-map <silent> <C-n> :NERDTreeMirror<CR>:NERDTreeToggle<CR><C-w>w
+map <silent> <C-t> :NvimTreeToggle<CR><C-w>w
 
 inoremap <S-Tab> <C-d>
 
@@ -52,19 +49,15 @@ endif
 
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
 call vundle#end()
-
-let NERDTreeShowHidden=1
-autocmd BufWinEnter * if getcmdwintype() == '' | silent NERDTreeMirror | endif
 ]])
 
 require("plugins")
 
-require("mason").setup()
-require("bufferline").setup{}
-require("mason-lspconfig").setup()
+require("core.mason")
+require("core.mason-lspconfig")
+require("bufferline")
 
 require("core.cmp")
 require("core.lsp")
@@ -72,5 +65,6 @@ require("core.dap")
 require("core.dap-ui")
 require("core.lualine")
 require("core.telescope")
+require("core.nvim-tree")
 require("core.treesitter")
 require("core.catppuccin")
