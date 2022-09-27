@@ -1,3 +1,9 @@
+vim.g.mapleader = "<Space>"
+
+vim.o.tabstop = 2
+vim.o.shiftwidth = vim.o.tabstop
+vim.o.modifiable = true
+
 vim.cmd([[
 set number
 set hidden
@@ -58,18 +64,18 @@ call vundle#end()
 ]])
 
 require("plugins")
-
 require("core.mason")
 require("core.mason-lspconfig")
 require("core.bufferline")
-
 require("core.cmp")
 require("core.lspconfig")
 require("core.dap")
 require("core.dap-ui")
+require("core.alpha")
 require("core.lualine")
 require("core.telescope")
 require("core.nvim-tree")
 require("core.treesitter")
 require("core.toggleterm")
 require("core.catppuccin")
+require("core.which-key")
