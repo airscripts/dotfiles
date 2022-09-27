@@ -40,8 +40,8 @@ tnoremap <esc> <C-\><C-N>
 
 nnoremap <silent>[bn :bn<CR>
 nnoremap <silent>[bp :bp<CR>
-nnoremap <silent>[bd :bd<CR>[bp
 nnoremap <silent>[nb :tabnew<CR>
+nnoremap <silent>[bd :bd<CR>:bp<CR>
 
 if filereadable("/etc/vim/vimrc.local")
   source /etc/vim/vimrc.local
