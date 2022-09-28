@@ -52,7 +52,7 @@ require'lspconfig'.html.setup{
 
 require'lspconfig'.vuels.setup{
   on_attach = on_attach,
-  capabilities = capabilities
+	root_dir = vim.loop.cwd,
 }
 
 require'lspconfig'.sqlls.setup{
@@ -81,5 +81,5 @@ require'lspconfig'.dockerls.setup{
 
 require'lspconfig'.tsserver.setup{
   on_attach = on_attach,
-  capabilities = capabilities
+	root_dir = vim.loop.cwd,
 }

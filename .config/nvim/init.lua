@@ -34,8 +34,8 @@ vim.cmd([[
 	map <silent> <C-f> :Telescope find_files<CR>
 	map <silent> <C-t> :NvimTreeToggle<CR><C-w>w
 	inoremap <S-Tab> <C-d>
-	inoremap <silent><C-j> <Esc><Cmd>exe v:count1 . "ToggleTerm"<CR>
 	inoremap <silent>f<C-j> :ToggleTerm direction=float<CR>
+	inoremap <silent><C-j> <Esc><Cmd>exe v:count1 . "ToggleTerm"<CR>
 	vnoremap <Tab> >>
 	vnoremap <S-Tab> <<
 	tnoremap <esc> <C-\><C-N>
@@ -43,8 +43,8 @@ vim.cmd([[
 	nnoremap <silent>[bp :bp<CR>
 	nnoremap <silent>[nb :tabnew<CR>
 	nnoremap <silent>[bd :bd<CR>:bp<CR>
-	nnoremap <silent><C-j> <Cmd>exe v:count1 . "ToggleTerm"<CR>
 	nnoremap <silent>f<C-j> :ToggleTerm direction=float<CR>
+	nnoremap <silent><C-j> <Cmd>exe v:count1 . "ToggleTerm"<CR>
 ]])
 
 vim.cmd([[
