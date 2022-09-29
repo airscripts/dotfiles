@@ -31,7 +31,7 @@ client.unfocused $peach $peach $black $red $peach
 client.focused_inactive $blue $black $blue $red $blue
 
 bindsym $mod+Shift+q kill
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec --no-startup-id alacritty
 bindsym $mod+d exec --no-startup-id "rofi -show drun"
 
 bindsym XF86MonBrightnessUp exec --no-startup-id light -A 5 
