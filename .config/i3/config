@@ -41,6 +41,9 @@ bindsym XF86AudioMicMute exec --no-startup-id amixer sset 'Capture' toggle
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer sset 'Master' 5%-
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer sset 'Master' 5%+
 
+bindsym $mod+Shift+m exec --no-startup-id setxkbmap -layout us
+bindsym $mod+Shift+n exec --no-startup-id setxkbmap -layout it
+
 bindsym $mod+l focus up
 bindsym $mod+Up focus up
 bindsym $mod+j focus left
