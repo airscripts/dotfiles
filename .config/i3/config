@@ -34,12 +34,12 @@ bindsym $mod+Shift+q kill
 bindsym $mod+Return exec alacritty
 bindsym $mod+d exec --no-startup-id "rofi -show drun"
 
-bindsym XF86MonBrightnessUp exec light -A 5 
-bindsym XF86MonBrightnessDown exec light -U 5 
-bindsym XF86AudioMute exec amixer sset 'Master' toggle
-bindsym XF86AudioMicMute exec amixer sset 'Capture' toggle
-bindsym XF86AudioLowerVolume exec amixer sset 'Master' 5%-
-bindsym XF86AudioRaiseVolume exec amixer sset 'Master' 5%+
+bindsym XF86MonBrightnessUp exec --no-startup-id light -A 5 
+bindsym XF86MonBrightnessDown exec --no-startup-id light -U 5 
+bindsym XF86AudioMute exec --no-startup-id amixer sset 'Master' toggle
+bindsym XF86AudioMicMute exec --no-startup-id amixer sset 'Capture' toggle
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer sset 'Master' 5%-
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer sset 'Master' 5%+
 
 bindsym $mod+l focus up
 bindsym $mod+Up focus up
