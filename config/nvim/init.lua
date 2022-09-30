@@ -47,14 +47,6 @@ vim.cmd([[
 	nnoremap <silent><C-j> <Cmd>exe v:count1 . "ToggleTerm"<CR>
 ]])
 
-vim.cmd([[
-	set rtp+=~/.vim/bundle/Vundle.vim
-	call vundle#begin()
-	Plugin 'VundleVim/Vundle.vim'
-	Plugin 'tpope/vim-fugitive'
-	call vundle#end()
-]])
-
 require("plugins")
 require("core.mason")
 require("core.mason-lspconfig")

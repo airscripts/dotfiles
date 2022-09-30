@@ -1,7 +1,8 @@
 return require('packer').startup(function()
   use {
     "wbthomason/packer.nvim",
-    "ojroques/vim-oscyank"
+    "ojroques/vim-oscyank",
+		"tpope/vim-fugitive",
   }
 
   use {
