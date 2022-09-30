@@ -1,4 +1,5 @@
 vim.g.mapleader = "<Space>"
+vim.g.maplocalleader = "<Space>"
 vim.g.oscyank_term = "default"
 
 vim.o.tabstop = 2
@@ -31,6 +32,7 @@ vim.cmd([[
 	map <silent> <C-s> :w<CR>
 	map <silent> <C-c> :OSCYank<CR>
 	map <silent> <C-p> :Telescope<CR>
+	map <silent> <C-g> :Telescope live_grep<CR>
 	map <silent> <C-f> :Telescope find_files<CR>
 	map <silent> <C-t> :NvimTreeToggle<CR><C-w>w
 	inoremap <S-Tab> <C-d>
@@ -43,6 +45,7 @@ vim.cmd([[
 	nnoremap <silent>[bp :bp<CR>
 	nnoremap <silent>[nb :tabnew<CR>
 	nnoremap <silent>[bd :bd<CR>:bp<CR>
+	nnoremap <silent>[gs :vertical Git<CR>
 	nnoremap <silent>f<C-j> :ToggleTerm direction=float<CR>
 	nnoremap <silent><C-j> <Cmd>exe v:count1 . "ToggleTerm"<CR>
 ]])
