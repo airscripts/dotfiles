@@ -1,2 +1,2 @@
 #!/bin/bash
-feh --bg-scale ~/Pictures/Wallpapers/Arch.png
+feh --bg-scale ~/Pictures/wallpapers/Arch.png

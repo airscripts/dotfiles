@@ -1,2 +1,2 @@
 #!/bin/bash
-xautolock -corners -detectsleep -time 5 -locker "i3lock -u -i ~/Pictures/Wallpapers/Arch\ FHD.png"
+xautolock -detectsleep -corners "+---" -cornerdelay 5 -cornersize 10 -time 5 -locker "i3lock -u -i ~/Pictures/wallpapers/Arch\ FHD.png"
