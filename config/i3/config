@@ -36,6 +36,9 @@ bindsym $mod+Shift+q kill
 bindsym $mod+Return exec --no-startup-id alacritty
 bindsym $mod+d exec --no-startup-id "rofi -show drun"
 
+bindsym Print exec --no-startup-id maim $HOME/Pictures/Screenshots/screenshot-$(date +'%m-%d-%Y-%H-%M-%S').png
+bindsym $mod+Print exec --no-startup-id maim -s $HOME/Pictures/Screenshots/screenshot-$(date +'%m-%d-%Y-%H-%M-%S').png
+
 bindsym XF86MonBrightnessUp exec --no-startup-id light -A 5 
 bindsym XF86MonBrightnessDown exec --no-startup-id light -U 5 
 bindsym XF86AudioMute exec --no-startup-id amixer sset 'Master' toggle
@@ -112,7 +115,6 @@ mode "resize" {
   bindsym Return mode "default"
   bindsym Escape mode "default"
   bindsym $mod+r mode "default"
-  
   bindsym k resize grow height 10 px or 10 ppt
   bindsym j resize shrink width 10 px or 10 ppt
   bindsym l resize shrink height 10 px or 10 ppt
@@ -130,10 +132,8 @@ bar {
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec_always --no-startup-id "picom --config ~/.config/picom/picom.conf"
-
 exec --no-startup-id redshift -l 20:20 -r -t 3000:3000
 exec --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/Arch.png
-
 #exec --no-startup-id dunst
 exec --no-startup-id bluetoothctl power on
 exec --no-startup-id "xautolock -corners -detectsleep -time 5 -locker \"i3lock -u -i ~/Pictures/Wallpapers/Arch\ FHD.png\""
