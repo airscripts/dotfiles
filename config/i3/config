@@ -20,7 +20,9 @@ floating_modifier $mod
 
 default_border pixel 1
 default_floating_border pixel 1
+
 for_window [class="^.*"] border pixel 1
+for_window [title="^Android Emulator.+:[0-9]+$"] floating enable
 
 title_align center
 font pango:Cantarell 10
@@ -37,7 +39,7 @@ bindsym $mod+d exec --no-startup-id "rofi -show drun"
 bindsym XF86MonBrightnessUp exec --no-startup-id light -A 5 
 bindsym XF86MonBrightnessDown exec --no-startup-id light -U 5 
 bindsym XF86AudioMute exec --no-startup-id amixer sset 'Master' toggle
-bindsym XF86AudioMicMute exec --no-startup-id amixer sset 'Capture' toggle 
+bindsym XF86AudioMicMute exec --no-startup-id $HOME/.config/i3/mute.sh 
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer sset 'Master' 5%-
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer sset 'Master' 5%+
 
@@ -135,3 +137,4 @@ exec --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/Arch.png
 #exec --no-startup-id dunst
 exec --no-startup-id bluetoothctl power on
 exec --no-startup-id "xautolock -corners -detectsleep -time 5 -locker \"i3lock -u -i ~/Pictures/Wallpapers/Arch\ FHD.png\""
+exec --no-startup-id $HOME/.config/i3/mic.sh
