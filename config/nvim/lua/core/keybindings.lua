@@ -2,6 +2,8 @@ local function map(mode, keybind, command)
 	vim.keymap.set(mode, keybind, command, { silent = true })
 end
 
+map("n", "<C-v>", "\"+p")
+map("n", "<C-a>", "ggVG")
 map("n", "<C-s>", "<CMD>w<CR>")
 map("n", "<leader>[", "<CMD>bn<CR>")
 map("n", "<leader>]", "<CMD>bp<CR>")
@@ -18,6 +20,7 @@ map("i", "<S-Tab>", "<C-d>")
 
 map("v", "<Tab>", ">>")
 map("v", "<S-Tab>", "<<")
+map("v", "<C-x>", "\"+c<Esc>")
 map("v", "<C-c>", ":OSCYank<CR>")
 
 map("t", "<Esc>", "<C-\\><C-N>")
