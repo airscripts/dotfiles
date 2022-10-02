@@ -1,14 +1,34 @@
 local catppuccin = require("catppuccin")
 
 catppuccin.setup({
-  transparent_background = false,
+  cmp = true,
+  hop = false,
+  fern = false,
+  notify = true,
+  neogit = false,
+  barbar = false,
+  gitsigns = true,
+  markdown = true,
+  lsp_saga = false,
+  telescope = true,
+  dashboard = true,
+  gitgutter = false,
+  which_key = false,
+  vim_sneak = false,
+  bufferline = true,
+  telekasten = true,
+  lightspeed = false,
+  ts_rainbow = false,
   term_colors = false,
-  
+  lsp_trouble = false,
+  symbols_outline = true,
+  transparent_background = false,
+
   styles = {
-    comments = { "italic" },
-    functions = { "italic" },
-    keywords = { "italic" },
     strings = {},
+    comments = { "italic" },
+    keywords = { "italic" },
+    functions = { "italic" },
     variables = { "italic" },
   },
 
@@ -17,29 +37,22 @@ catppuccin.setup({
 
     native_lsp = {
       enabled = true,
-      
+
       virtual_text = {
+				hints = { "italic" },
         errors = { "italic" },
-	hints = { "italic" },
-	warnings = { "italic" },
-	information = { "italic" },
+				warnings = { "italic" },
+				information = { "italic" },
       },
 
       underlines = {
-        errors = { "underline" },
         hints = { "underline" },
+        errors = { "underline" },
         warnings = { "underline" },
-        information = { "underline" }, 
+        information = { "underline" },
       },
   },
 
-  lsp_trouble = false,
-  cmp = true,
-  lsp_saga = false,
-  gitgutter = false,
-  gitsigns = true, 
-  telescope = true,
-  
   nvimtree = {
     enabled = true,
     show_root = false,
@@ -52,24 +65,8 @@ catppuccin.setup({
     transparent_panel = false,
   },
 
-  which_key = false,
-  
   indent_blankline = {
     enabled = true,
     colored_indent_levels = false,
   },
-
-  dashboard = true,
-  neogit = false,
-  vim_sneak = false,
-  fern = false,
-  barbar = false,
-  bufferline = true,
-  markdown = true,
-  lightspeed = false,
-  ts_rainbow = false,
-  hop = false,
-  notify = true,
-  telekasten = true,
-  symbols_outline = true,
 }})

@@ -1,62 +1,67 @@
 local dapui = require("dapui")
 
 dapui.setup({
-  icons = { expanded = "▾", collapsed = "▸", current_frame = "▸" },
-  
+  windows = { indent = 1 },
+  expand_lines = vim.fn.has("nvim-0.7"),
+
+	icons = {
+		expanded = "▾",
+		collapsed = "▸",
+		current_frame = "▸"
+  },
+
   mappings = {
-    expand = { "<CR>", "<2-LeftMouse>" },
     open = "o",
-    remove = "d",
     edit = "e",
     repl = "r",
     toggle = "t",
+    remove = "d",
+    expand = { "<CR>", "<2-LeftMouse>" },
   },
 
-  expand_lines = vim.fn.has("nvim-0.7"),
-  
   layouts = {
     {
-      elements = {
-        { id = "scopes", size = 0.25 },
-        "breakpoints",
-        "stacks",
-        "watches",
-      },
-  
       size = 40,
       position = "left",
+
+      elements = {
+        "stacks",
+        "watches",
+        "breakpoints",
+        { id = "scopes", size = 0.25 },
+      },
     },
 
     {
+			size = 0.25,
+      position = "bottom",
+
       elements = {
         "repl",
         "console",
       },
-    
-      size = 0.25, 
-      position = "bottom",
     },
   },
 
   controls = {
     enabled = true,
     element = "repl",
-  
+
     icons = {
-      pause = "",
       play = "",
+      pause = "",
+      step_out = "",
+      run_last = "↻",
       step_into = "",
       step_over = "",
-      step_out = "",
       step_back = "",
-      run_last = "↻",
       terminate = "□",
     },
   },
 
   floating = {
-    max_height = nil, 
-    max_width = nil, 
+    max_width = nil,
+    max_height = nil,
     border = "single",
 
     mappings = {
@@ -64,11 +69,9 @@ dapui.setup({
     },
   },
 
-  windows = { indent = 1 },
-  
   render = {
-    max_type_length = nil, 
-    max_value_lines = 100, 
+    max_type_length = nil,
+    max_value_lines = 100,
   }
 })
 

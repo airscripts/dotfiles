@@ -1,20 +1,20 @@
-local dap = require('dap')
+local dap = require("dap")
 
 dap.adapters.python = {
-  type = 'executable';
-  command = '/home/airscript/.local/share/nvim/mason/packages/debugpy/venv/bin/python';
-  args = { '-m', 'debugpy.adapter' };
+  type = "executable";
+  args = { "-m", "debugpy.adapter" };
+  command = "/home/airscript/.local/share/nvim/mason/packages/debugpy/venv/bin/python";
 }
 
 dap.configurations.python = {
   {
-    type = 'python';
-    request = 'launch';
-    name = "Launch file";
+    type = "python";
+    request = "launch";
     program = "${file}";
+    name = "Launch file";
 
     pythonPath = function()
-      return '/usr/bin/python'
+      return "/usr/bin/python"
     end;
   },
 }
