@@ -9,7 +9,7 @@ configuration {
   display-window: "Window";
   display-drun: "Applications";
   font: "FiraCode Nerd Font 12";
-  modi: "window,run,drun,ssh,emoji";
+  modi: "window,run,drun,ssh,emoji,clipboard:greenclip print";
 
   timeout {
     delay: 5;
