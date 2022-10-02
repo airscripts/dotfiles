@@ -1,0 +1,4 @@
+alias lg="lazygit"
+alias fvm="$HOME/fvm/fvm"
+alias peek="GDK_BACKEND=x11 peek"
+alias emulator="$HOME/Android/Sdk/emulator/emulator"
