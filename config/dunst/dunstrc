@@ -35,7 +35,7 @@ force_xwayland = false
 force_xinerama = false
 stack_duplicates = true
 show_age_threshold = 60
-frame_color = "#96CDFB"
+frame_color = "#8CAAEE"
 separator_color = frame
 always_run_script = true
 ignore_dbusclose = false
@@ -57,14 +57,14 @@ icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/de
 per_monitor_dpi = false
 
 [urgency_low]
-background = "#1E1E2E"
-foreground = "#D9E0EE"
+background = "#303446"
+foreground = "#C6D0F5"
 
 [urgency_normal]
-background = "#1E1E2E"
-foreground = "#D9E0EE"
+background = "#303446"
+foreground = "#C6D0F5"
 
 [urgency_critical]
-background = "#1E1E2E"
-foreground = "#D9E0EE"
-frame_color = "#F8BD96"
+background = "#303446"
+foreground = "#C6D0F5"
+frame_color = "#EF9F76"
