@@ -15,6 +15,7 @@ vim.o.modifiable = true
 vim.o.ignorecase = true
 vim.o.background = "dark"
 vim.o.termguicolors = true
+vim.o.term = "screen-256color"
 vim.o.shiftwidth = vim.o.tabstop
 vim.o.completeopt = "menu,menuone,noselect"
 
