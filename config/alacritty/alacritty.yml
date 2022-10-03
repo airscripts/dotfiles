@@ -4,10 +4,10 @@ window:
     columns: 132
 
   padding:
-    x: 15
-    y: 15
+    x: 10
+    y: 10
 
-  dynamic_padding: false
+  dynamic_padding: true
   startup_mode: Maximized
 
 scrolling:
