@@ -19,7 +19,14 @@ vim.o.term = "screen-256color"
 vim.o.shiftwidth = vim.o.tabstop
 vim.o.completeopt = "menu,menuone,noselect"
 
+vim.diagnostic.config({
+  signs = true,
+  underline = true,
+  severity_sort = true,
+  virtual_text = false,
+  update_in_insert = true,
+})
+
 vim.cmd("filetype on")
 vim.cmd("colorscheme catppuccin")
 vim.cmd("filetype plugin indent on")
-vim.cmd("hi Normal guibg=NONE ctermbg=NONE")
