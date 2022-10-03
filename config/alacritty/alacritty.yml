@@ -4,14 +4,14 @@ window:
     columns: 132
 
   padding:
-    x: 26
-    y: 26
+    x: 15
+    y: 15
 
   dynamic_padding: false
   startup_mode: Maximized
 
 scrolling:
-  history: 1000
+  history: 5000
   multiplier: 3
 
 font:
