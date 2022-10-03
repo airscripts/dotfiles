@@ -1,74 +1,75 @@
 colors:
     primary:
-        background: "#303446"
-        foreground: "#C6D0F5"
-        dim_foreground: "#C6D0F5"
-        bright_foreground: "#C6D0F5"
+        background: "#1E1E2E" 
+        foreground: "#CDD6F4"
+        dim_foreground: "#CDD6F4"
+        bright_foreground: "#CDD6F4"
 
     cursor:
-        text: "#303446"
-        cursor: "#F2D5CF"
-    
+        text: "#1E1E2E"
+        cursor: "#F5E0DC"
+
     vi_mode_cursor:
-        text: "#303446"
-        cursor: "#BABBF1"
+        text: "#1E1E2E"
+        cursor: "#B4BEFE"
 
     search:
         matches:
-            foreground: "#303446"
-            background: "#A5ADCE"
+            foreground: "#1E1E2E"
+            background: "#A6ADC8"
 
         focused_match:
-            foreground: "#303446"
-            background: "#A6D189"
+            foreground: "#1E1E2E"
+            background: "#A6E3A1"
 
         footer_bar:
-            foreground: "#303446"
-            background: "#A5ADCE"
+            foreground: "#1E1E2E"
+            background: "#A6ADC8"
 
     hints:
         start:
-            foreground: "#303446"
-            background: "#E5C890"
+            foreground: "#1E1E2E"
+            background: "#F9E2AF"
 
         end:
-            foreground: "#303446"
-            background: "#A5ADCE"
+            foreground: "#1E1E2E"
+            background: "#A6ADC8"
 
     selection:
-        text: "#303446"
-        background: "#F2D5CF"
+        text: "#1E1E2E"
+        background: "#F5E0DC"
 
     normal:
-        red: "#E78284"
-        blue: "#8CAAEE"
-        cyan: "#81C8BE"
-        black: "#51576D"
-        green: "#A6D189"
-        white: "#B5BFE2"
-        yellow: "#E5C890"
-        magenta: "#F4B8E4"
+        red: "#F38BA8"
+        blue: "#89B4FA"
+        cyan: "#94E2D5"
+        green: "#A6E3A1"
+        white: "#BAC2DE"
+        black: "#45475A"
+        yellow: "#F9E2AF"
+        magenta: "#F5C2E7"
 
     bright:
-        red: "#E78284"
-        blue: "#8CAAEE"
-        cyan: "#81C8BE"
-        black: "#626880"
-        green: "#A6D189"
-        white: "#A5ADCE"
-        yellow: "#E5C890"
-        magenta: "#F4B8E4"
+        red: "#F38BA8"
+        blue: "#89B4FA"
+        cyan: "#94E2D5"
+        black: "#585B70"
+        white: "#A6ADC8"
+        green: "#A6E3A1"
+        yellow: "#F9E2AF"
+        magenta: "#F5C2E7"
 
     dim:
-        red: "#E78284" 
-        blue: "#8CAAEE" 
-        cyan: "#81C8BE" 
-        black: "#51576D" 
-        green: "#A6D189" 
-        white: "#B5BFE2" 
-        yellow: "#E5C890" 
-        magenta: "#F4B8E4" 
+        red: "#F38BA8"
+        blue: "#89B4FA"
+        cyan: "#94E2D5"
+        white: "#BAC2DE"
+        green: "#A6E3A1"
+        black: "#45475A"
+        yellow: "#F9E2AF"
+        magenta: "#F5C2E7"
 
     indexed_colors:
-        - { index: 16, color: "#EF9F76" }
-        - { index: 17, color: "#F2D5CF" }
+        - { index: 16, color: "#FAB387" }
+        - { index: 17, color: "#F5E0DC" }
+
