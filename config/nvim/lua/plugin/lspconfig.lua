@@ -62,7 +62,6 @@ require"lspconfig".sqlls.setup{
 
 require"lspconfig".cssls.setup{
   on_attach = on_attach,
-  capabilities = capabilities
 }
 
 require"lspconfig".bashls.setup{
