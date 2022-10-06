@@ -6,8 +6,8 @@ lualine.setup {
     theme = "catppuccin",
     disabled_filetypes = {},
     always_divide_middle = true,
-    section_separators = { left = "", right = ""},
-    component_separators = { left = "", right = ""},
+    section_separators = { left = "", right = ""},
+    component_separators = { left = "", right = ""},
   },
 
   sections = {
@@ -15,8 +15,8 @@ lualine.setup {
     lualine_c = {"filename"},
     lualine_y = {"progress"},
     lualine_z = {"location"},
+    lualine_x = {"filetype"},
     lualine_b = {"branch", "diff", "diagnostics"},
-    lualine_x = {"encoding", "fileformat", "filetype"},
   },
 
   inactive_sections = {
