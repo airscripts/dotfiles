@@ -13,6 +13,7 @@ return require("packer").startup(function()
   use { "ojroques/vim-oscyank" }
   use { "neovim/nvim-lspconfig" }
   use { "mfussenegger/nvim-dap" }
+	use { "ggandor/lightspeed.nvim" }
   use { "williamboman/mason.nvim" }
 	use { "saadparwaiz1/cmp_luasnip" }
   use { "williamboman/mason-lspconfig.nvim" }
