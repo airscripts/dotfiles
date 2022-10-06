@@ -19,9 +19,8 @@ map("n", "<C-j>", "<Esc><CMD>exe v:count1 . 'ToggleTerm'<CR>")
 
 map("i", "<S-Tab>", "<C-d>")
 
-map("v", "<Tab>", ">>")
-map("v", "<S-Tab>", "<<")
-map("v", "<C-x>", "\"+c<Esc>")
+map("v", "<Tab>", ">><Esc>")
+map("v", "<S-Tab>", "<<<Esc>")
 map("v", "<C-c>", ":OSCYank<CR>")
 
 map("t", "<Esc>", "<C-\\><C-N>")
