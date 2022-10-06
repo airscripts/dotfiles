@@ -14,6 +14,7 @@ vim.o.autowrite = true
 vim.o.modifiable = true
 vim.o.ignorecase = true
 vim.o.cursorline = true
+vim.o.cursorcolumn = true
 vim.o.background = "dark"
 vim.o.termguicolors = true
 vim.o.term = "screen-256color"
