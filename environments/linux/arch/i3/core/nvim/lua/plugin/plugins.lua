@@ -13,6 +13,8 @@ return require("packer").startup(function()
   use { "ojroques/vim-oscyank" }
   use { "neovim/nvim-lspconfig" }
   use { "mfussenegger/nvim-dap" }
+	use { "windwp/nvim-autopairs" }
+	use { "lewis6991/gitsigns.nvim" }
 	use { "ggandor/lightspeed.nvim" }
   use { "williamboman/mason.nvim" }
 	use { "yamatsum/nvim-cursorline" }
