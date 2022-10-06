@@ -16,6 +16,7 @@ return require("packer").startup(function()
   use { "williamboman/mason.nvim" }
 	use { "saadparwaiz1/cmp_luasnip" }
   use { "williamboman/mason-lspconfig.nvim" }
+	use { "lukas-reineke/indent-blankline.nvim" }
 
 	use {
 		"folke/trouble.nvim",
