@@ -70,7 +70,6 @@ require"lspconfig".bashls.setup{
 
 require"lspconfig".jsonls.setup{
   on_attach = on_attach,
-  capabilities = capabilities
 }
 
 require"lspconfig".dockerls.setup{
