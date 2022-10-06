@@ -15,6 +15,7 @@ return require("packer").startup(function()
   use { "mfussenegger/nvim-dap" }
 	use { "ggandor/lightspeed.nvim" }
   use { "williamboman/mason.nvim" }
+	use { "yamatsum/nvim-cursorline" }
 	use { "saadparwaiz1/cmp_luasnip" }
 	use { "petertriho/nvim-scrollbar" }
   use { "williamboman/mason-lspconfig.nvim" }
