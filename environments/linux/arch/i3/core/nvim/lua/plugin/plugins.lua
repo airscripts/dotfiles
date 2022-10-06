@@ -14,10 +14,10 @@ return require("packer").startup(function()
   use { "neovim/nvim-lspconfig" }
   use { "mfussenegger/nvim-dap" }
 	use { "windwp/nvim-autopairs" }
+	use { "RRethy/vim-illuminate" }
 	use { "lewis6991/gitsigns.nvim" }
 	use { "ggandor/lightspeed.nvim" }
   use { "williamboman/mason.nvim" }
-	use { "yamatsum/nvim-cursorline" }
 	use { "saadparwaiz1/cmp_luasnip" }
 	use { "petertriho/nvim-scrollbar" }
   use { "williamboman/mason-lspconfig.nvim" }
