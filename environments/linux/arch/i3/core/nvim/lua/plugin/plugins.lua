@@ -6,8 +6,9 @@ return require("packer").startup(function()
 	use { "L3MON4D3/LuaSnip" }
 	use { "tpope/vim-fugitive" }
 	use { "hrsh7th/cmp-buffer" }
-	use { "hrsh7th/cmp-cmdline" }
   use { "goolord/alpha-nvim" }
+	use { "hrsh7th/cmp-cmdline" }
+	use { "psliwka/vim-smoothie" }
 	use { "hrsh7th/cmp-nvim-lsp" }
 	use { "folke/which-key.nvim" }
   use { "ojroques/vim-oscyank" }
