@@ -16,6 +16,7 @@ return require("packer").startup(function()
 	use { "ggandor/lightspeed.nvim" }
   use { "williamboman/mason.nvim" }
 	use { "saadparwaiz1/cmp_luasnip" }
+	use { "petertriho/nvim-scrollbar" }
   use { "williamboman/mason-lspconfig.nvim" }
 	use { "lukas-reineke/indent-blankline.nvim" }
 
@@ -68,6 +69,7 @@ return require("packer").startup(function()
 
   use({
     "catppuccin/nvim",
-    as = "catppuccin"
+    as = "catppuccin",
+		run = ":CatppuccinCompile"
   })
 end)
