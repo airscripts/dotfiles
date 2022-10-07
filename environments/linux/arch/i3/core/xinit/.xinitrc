@@ -12,9 +12,9 @@ if [ -f /usr/bin/gnome-keyring-daemon ]; then
 fi
 
 if [ -f /usr/bin/i3 ]; then
-	exec i3
+  exec i3
 fi
 
 if [ -f ~/.mouseconfig ]; then
-	xmodmap ~/.mouseconfig
+  xmodmap ~/.mouseconfig
 fi
