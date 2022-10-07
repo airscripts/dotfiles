@@ -14,3 +14,7 @@ fi
 if [ -f /usr/bin/i3 ]; then
 	exec i3
 fi
+
+if [ -f ~/.mouseconfig ]; then
+	xmodmap ~/.mouseconfig
+fi
