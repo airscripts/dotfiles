@@ -17,3 +17,6 @@ referrer-spoof: behind-the-scene false
 * 1st-party * allow
 * 1st-party frame allow
 github.com githubassets.com * allow
+protonvpn.com hcaptcha.com script allow
+protonvpn.com hcaptcha.com xhr allow
+protonvpn.com newassets.hcaptcha.com frame allow
