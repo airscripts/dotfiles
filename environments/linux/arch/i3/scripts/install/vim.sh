@@ -1,2 +1,2 @@
 #!/bin/bash
-cp ../core/vim/vimrc ~/
+cp ./core/vim/vimrc ~/
