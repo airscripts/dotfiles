@@ -32,8 +32,8 @@ catppuccin.setup({
 		telekasten = true,
 		lightspeed = true,
 		ts_rainbow = false,
-		term_colors = true,
 		lsp_trouble = true,
+		term_colors = false,
 
     native_lsp = {
       enabled = true,
