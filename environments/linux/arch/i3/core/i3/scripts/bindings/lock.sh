@@ -1,2 +1,3 @@
 #!/bin/bash
-i3lock -u -i ~/Pictures/wallpapers/Arch\ FHD.png
+#i3lock -u -i ~/Pictures/wallpapers/Arch\ FHD.png
+dm-tool lock
