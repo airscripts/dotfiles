@@ -1,22 +1,26 @@
-# 🔖 dotfiles  
-This repository contains all my personal dotfiles.  
+# 🪶 dotfiles  
+This repository contains all my personal dotfiles divided by environment.  
 
-## 📦 Installation  
-Just clone this repository.  
+## 📦 Install
+Follow the steps below to make use of Dotfiles.
 
-## 🔧 Usage  
-Just add or replace existing related dotfiles in order to load them up.  
+1. Clone this repository:
+```bash
+git clone https://github.com/Airscripts/dotfiles.git
+```
 
-## 🤝 Contributing  
+## 🔧 Usage
+Just add or replace your existing dotfiles.  
+
+## 🤝 Contribute
 Contributions and suggestions about how to improve them are welcome!  
 
 ## 💚 Support  
 If you want to support my work you can do it with the links below.  
 Choose what you find more suitable for you:  
 - [Support me on GitHub](https://github.com/sponsors/Airscripts)  
+- [Support me via ko-fi](https://ko-fi.com/airscript)
 - [Support me via linktr.ee](https://linktr.ee/airscript)  
 
-Thank you so much, it means a lot for me!
-
 ## 💳 License  
-[MIT License](https://github.com/Airscripts/dotfiles/blob/main/LICENSE)  
+This repository is licensed under [MIT License](https://github.com/Airscripts/dotfiles/blob/main/LICENSE).
