@@ -1,26 +1,40 @@
-# 🪶 dotfiles  
+# dotfiles  
 This repository contains all my personal dotfiles divided by environment.  
 
-## 📦 Install
+## Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Resources](#resources)
+- [Contributing](#contributing)
+- [Support](#support)
+- [License](#license)
+
+## Installing
 Follow the steps below to make use of Dotfiles.
 
-1. Clone this repository:
+Clone this repository:
 ```bash
 git clone https://github.com/Airscripts/dotfiles.git
 ```
 
-## 🔧 Usage
+## Usage
 Just add or replace your existing dotfiles.  
 
-## 🤝 Contribute
+## Contributing
 Contributions and suggestions about how to improve them are welcome!  
 
-## 💚 Support  
-If you want to support my work you can do it with the links below.  
+## Support
+If you want to support my work you can do it following me, leaving a star, sharing my projects or also with the links below.  
 Choose what you find more suitable for you:  
-- [Support me on GitHub](https://github.com/sponsors/Airscripts)  
-- [Support me via ko-fi](https://ko-fi.com/airscript)
-- [Support me via linktr.ee](https://linktr.ee/airscript)  
 
-## 💳 License  
+<a href="https://sponsor.airscript.it" target="blank">
+  <img src="https://raw.githubusercontent.com/airscripts/assets/main/images/github-sponsors.svg" alt="GitHub Sponsors" width="30px" />
+</a>&nbsp;
+<a href="https://kofi.airscript.it" target="blank">
+  <img src="https://raw.githubusercontent.com/airscripts/assets/main/images/kofi.svg" alt="Kofi" width="30px" />
+</a>&nbsp;
+
+*As of my personal preference, I'do go with GitHub Sponsors.*
+
+## License  
 This repository is licensed under [MIT License](https://github.com/Airscripts/dotfiles/blob/main/LICENSE).
