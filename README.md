@@ -9,7 +9,7 @@ This repository contains all my personal dotfiles divided by environment.
 - [Support](#support)
 - [License](#license)
 
-## Installing
+## Installation
 Follow the steps below to make use of Dotfiles.
 
 Clone this repository:
