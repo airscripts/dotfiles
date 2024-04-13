@@ -1,7 +1,0 @@
-about-scheme
-chrome-extension-scheme
-chrome-scheme
-moz-extension-scheme
-opera-scheme
-vivaldi-scheme
-wyciwyg-scheme

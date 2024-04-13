@@ -1,0 +1,10 @@
+set number
+set hidden
+set showcmd
+set mouse=a
+set showmatch
+set smartcase
+set incsearch
+set autowrite
+set ignorecase
+set nocompatible

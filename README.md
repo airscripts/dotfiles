@@ -4,7 +4,6 @@ This repository contains all my personal dotfiles divided by environment.
 ## Contents
 - [Installation](#installation)
 - [Usage](#usage)
-- [Resources](#resources)
 - [Contributing](#contributing)
 - [Support](#support)
 - [License](#license)
@@ -14,7 +13,7 @@ Follow the steps below to make use of Dotfiles.
 
 Clone this repository:
 ```bash
-git clone https://github.com/Airscripts/dotfiles.git
+git clone https://github.com/airscripts/dotfiles.git
 ```
 
 ## Usage
@@ -35,4 +34,4 @@ Choose what you find more suitable for you:
 </a>
 
 ## License  
-This repository is licensed under [MIT License](https://github.com/Airscripts/dotfiles/blob/main/LICENSE).
+This repository is licensed under [MIT License](https://github.com/airscripts/dotfiles/blob/main/LICENSE).
